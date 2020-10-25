@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/">
           Logo
         </Link>
         <button
@@ -21,20 +21,23 @@ function Header() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to="#">
-                Login <span className="sr-only">(current)</span>
+              <Link className="nav-link" to="/">
+                Home 
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="/signin">
+                Signin 
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/signup">
                 Signup
               </Link>
             </li>
-         
           </ul>
-     
         </div>
       </nav>
     </div>
